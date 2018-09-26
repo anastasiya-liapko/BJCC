@@ -1,0 +1,95 @@
+.main-posts
+	a
+		text-decoration: none
+
+.main-posts__post
+	margin: 0
+	padding: 0
+	div
+		position: relative
+	img
+		width: 100%
+		height: auto
+
+.main-posts__post_main
+	margin: 50px 0
+	img
+		// height: 330px
+		height: 278px
+		object-fit: cover
+
+.main-posts__post-title
+	position: absolute
+	top: 10%
+	right: 5%
+	width: 307px
+	font-size: $main-title-font-size
+	font-weight: $bold
+	color: $white-color
+	text-align: right
+
+.main-posts__post-date
+	position: absolute
+	bottom: 0
+	left: 30px
+	font-size: $main-tag-font-size
+	font-weight: $medium
+	color: $white-color
+	text-align: left
+
+.main-posts__post-tag
+	padding-top: 20px
+	padding-left: 5%
+	font-size: $main-tag-font-size
+	font-weight: $medium
+	color: $tag-color
+	text-align: left
+
+.main-posts__post-text
+	margin-bottom: 40px
+	padding-right: 5%
+	padding-left: 5%
+	font-size: $secondary-text-font-size
+	color: $secondary-title-color
+	opacity: 0.7
+	text-align: left
+
+.main-posts__btn
+	a
+		width: 287px
+		height: 60px
+		padding: 20px 110px
+		margin-bottom: 60px
+		margin-top: 30px
+		border-radius: 30px
+
+@media (min-width: 576px)
+
+	.main-posts__post-tag
+		padding-left: 0
+
+	.main-posts__post-text
+		padding-right: 50px
+		padding-left: 0
+
+@media (min-width: 768px)
+
+	.main-posts__post:nth-child(2n+1)
+		padding-right: 10px
+	.main-posts__post:nth-child(2n)
+		padding-left: 10px
+	.main-posts__post_main:nth-child(1)
+		padding-right: 0px
+
+  .main-posts__post-title
+    top: 15%
+
+@media (min-width: 1200px)
+	.main-posts__post_main
+		img
+			// height: auto
+			height: 278px
+		.main-posts__post-title
+			width: 438px
+
+		

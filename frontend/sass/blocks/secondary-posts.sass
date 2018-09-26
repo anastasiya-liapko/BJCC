@@ -1,0 +1,89 @@
+.secondary-posts
+	padding-top: 55px
+	padding-bottom: 95px
+	a
+		text-decoration: none
+
+.secondary-posts__post-card
+	margin-bottom: 25px
+	overflow: hidden
+	box-shadow: 0 10px 30px 0 rgba(32, 33, 47, 0.08);
+	img
+		// width: 184px
+		// height: 161px
+		width: 100%
+		float: left
+		margin-top: 5px
+		margin-bottom: 12px
+		margin-right: 12px
+
+.secondary-posts__title
+	margin-bottom: 40px
+	font-size: $main-title-font-size
+	font-weight: $bold
+	color: $main-color
+
+.secondary-posts__post-title
+	width: 100%
+	padding-right: 10%
+	font-size: $secondary-title-font-size
+	line-height: normal
+	font-weight: $bold
+	color: $secondary-title-color
+
+.secondary-posts__post-date
+	margin: 0
+	padding: 0 15px
+	padding-top: 20px
+	font-size: $secondary-tag-font-size
+	color: $text-color
+	opacity: 0.5
+	text-transform: uppercase
+	white-space: nowrap
+
+.secondary-posts__post-category
+	margin-top: 20px
+	font-size: 0.75rem
+	font-weight: $bold
+	color: $main-color
+	white-space: nowrap
+
+.secondary-posts__post-tag
+	margin: 5px 0
+	padding: 0 10px
+	font-size: $secondary-tag-font-size
+	font-weight: $medium
+	color: $tag-color
+	
+.secondary-posts__post-text
+	margin-top: 1rem
+	padding: 0 15px
+	font-size: $secondary-text-font-size
+	line-height: normal
+	color: $secondary-title-color
+	opacity: 0.7
+
+@media(min-width: 576px)
+
+	.secondary-posts__post-card
+		img
+			width: 184px
+			height: 161px
+			margin-bottom: 0
+
+@media(min-width: 768px)
+	
+	.secondary-posts__post-card
+		img
+			width: 100%
+			height: auto
+			margin-bottom: 12px
+
+@media(min-width: 992px)
+
+	.secondary-posts__post-card
+		img
+			width: 184px
+			height: 161px
+			margin-bottom: 0
+

@@ -1,0 +1,72 @@
+.jq-selectbox__select
+  background: none !important
+  box-shadow: none !important
+  border: 1px solid $main-color !important
+  border-radius: 16.5px !important
+
+.select_short
+  width: 100%
+  height: 33px
+
+.select_long
+  width: auto
+
+.jq-selectbox__trigger
+  border: none !important
+
+.jq-selectbox__trigger-arrow
+  position: relative !important
+  top: 1px !important
+  right: 2px !important
+  z-index: 2
+  width: 30px !important
+  height: 30px !important
+  border: 0 !important
+  &::before
+    content: "\e903"
+    font-family: 'icomoon'
+    font-size: 12px
+    position: absolute
+    top: 4px
+    right: -3px
+    width: 20px
+    height: 20px
+    color: $black-color
+    transform: rotate(90deg)
+
+.jq-selectbox__dropdown
+  top: -2px !important
+  border-radius: 16.5px !important
+  border: 1px solid $main-color !important
+  li
+    border-bottom: 1px solid $main-color
+    border-radius: 0
+    &:last-child
+      border: none
+  ul
+    border-radius: 17px
+
+.jq-selectbox li.selected
+  background-color: $white-color !important
+  color: $black-color !important
+  // border-radius: 16.5px !important
+
+.jq-selectbox li
+  padding-top: 7px !important
+  &:hover
+    background-color: transparent !important
+    color: $black-color !important
+    box-shadow: none !important
+
+.jq-selectbox__select
+  padding: 0 !important
+
+.jq-selectbox select,
+.jq-select-multiple select
+  width: 90% !important
+
+@media(min-width: 576px)
+
+  .select_short
+    width: 130px
+

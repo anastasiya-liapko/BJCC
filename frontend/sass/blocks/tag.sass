@@ -1,0 +1,13 @@
+.tag
+  position: relative
+  padding: 0 4px
+  &::after
+    position: absolute
+    content: "|"
+    top: -3px
+    right: 0
+    width: 1px
+    height: 40px
+  
+.tag:last-child::after
+  content: ""

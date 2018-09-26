@@ -1,0 +1,77 @@
+.dropdown-menu
+  margin-top: -5px
+  background-color: $main-color
+  border: none
+
+.dropdown-item
+  padding: 4px 0 !important
+  text-align: center
+  font-size: $footer-font-size
+  font-weight: $medium
+  color: $white-color
+  border-radius: 0 !important
+  border-bottom: 1px solid #2aa6bf
+  text-transform: capitalize
+  white-space: nowrap
+  &:hover
+    color: $white-color
+    background-color: transparent
+  &:last-child
+    border: none
+
+.dropdown-item_main
+  display: none
+
+.dropdown-toggle::after
+  display: none
+  
+@media (min-width: 992px)
+
+  .dropdown-menu
+    min-width: 60px
+    margin-top: -30px
+    padding: 4px 10px
+    border: none
+    border-radius: 1rem
+
+  .dropdown-item
+    padding: 0.25rem 0.5rem
+    font-size: 0.50rem
+    font-weight: $regular
+    letter-spacing: 0.8px
+    text-align: left
+    text-transform: capitalize
+
+    &:active
+      background-color: transparent
+      opacity: 0.8
+    &:focus
+      color: white
+      background-color: transparent
+    &:last-child
+      margin-bottom: 6px
+
+  .dropdown-item_main
+    display: block
+    margin-bottom: 10px
+    font-size: 0.60rem
+    font-weight: $medium
+    border: none
+    text-transform: uppercase
+
+  .dropdown:hover .dropdown-menu
+    display: block
+
+@media (min-width: 1200px)
+
+  .dropdown-menu
+    min-width: 90px
+    margin-top: -34px
+    padding: 4px 15px
+
+  .dropdown-item
+    font-size: $footer-font-size
+
+  .dropdown-item_main
+    font-size: $header-font-size
+

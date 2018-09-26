@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>BJCC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
+
+  <link href="css/jquery.formstyler.css" rel="stylesheet" />
+  <link href="css/jquery.formstyler.theme.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/fonts.css">
+</head>
+
+<body>
+  <div style="overflow: hidden">
+  <div class="header pb-2">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg col-12 position-relative">
+
+        <a class="navbar-brand col-8 col-lg-3 m-0" href="#">
+          <img src="img/group-21.png" srcset="img/group-21@2x.png 2x, img/group-21@3x.png 3x">
+        </a>
+
+        <button class="search__btn d-lg-none" type="button" data-toggle="modal" data-target=".search">
+          <span class="icon-search"></span>
+          <span class="label">Search</span>
+        </button>
+      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse col-12 col-lg-4 col-lg-9 m-0 p-0" id="navbarTogglerDemo02">
+
+          <div class="navbar-nav col-12 col-lg-11 col-xl-11 justify-content-center justify-content-lg-between p-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service-time.html">service time</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="announcement-all.html">announcements</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="all-news.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">life cycle</a>
+              <ul class="dropdown-menu shadow"">
+                <a class="dropdown-item dropdown-item_main" href="all-news.html">life cycle</a>
+                <!-- <a class="dropdown-item" href="#">Birth(Brit)</a> -->
+                <a class="dropdown-item" href="all-news|title.html">Bar Mitzvah</a>
+                <!-- <a class="dropdown-item" href="#">Pidyon</a> -->
+                <!-- <a class="dropdown-item" href="#">Wedding</a> -->
+                <!-- <a class="dropdown-item" href="#">Mourning</a> -->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">learning</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">gallery</a>
+              <ul class="dropdown-menu shadow"">
+                <a class="dropdown-item dropdown-item_main" href="#">gallery</a>
+                <a class="dropdown-item" href="photo-album.html">Photo album</a>
+                <a class="dropdown-item" href="video-album.html">Video album</a>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">whats’on</a>
+              <ul class="dropdown-menu shadow"">
+                <a class="dropdown-item dropdown-item_main" href="#">whats’on</a>
+                <a class="dropdown-item" href="calendar.html">Calendar</a>
+                <a class="dropdown-item" href="candle-light.html">Candle light</a>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">payments</a>
+              <ul class="dropdown-menu shadow"">
+                <a class="dropdown-item dropdown-item_main" href="#">payments</a>
+                <a class="dropdown-item" href="donate-pay.html">Donate pay</a>
+                <a class="dropdown-item" href="make-a-payment.html">Make a payment</a>
+                <a class="dropdown-item" href="payment-policy.html">Payment policy</a>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Youth</a>
+            </li>
+          </div>
+          <!-- navbar-nav -->
+
+          <form class="search-form form-inline position-absolute d-none d-lg-block text-center" action="search-results.html">
+            <button class="search-form__btn btn my-sm-0" type="submit">
+              <span class="icon-search"></span>
+              <span class="label">Search</span>
+            </button>
+            <input class="search-form__input form-control mr-sm-2 position-absolute" type="text" name="search" placeholder="Искать">
+          </form>
+      
+          <div class="header-descr row justify-content-between m-0">
+
+            <div class="header-descr-1 row col-12 col-xl-9 justify-content-between m-0 p-0 align-items-end pb-1">
+              <div class="col-4 m-0 p-0">
+                <span class="icon-candles position-absolute"></span>
+                <p class="candles m-0">Lighting 27 July 20:29 End 28 July 22:02</p>
+              </div>
+              <div class="col-4 m-0 p-0">
+                <span class="icon-paper position-absolute"></span>
+                <p class="paper m-0">The chapter of thai Vaethanan Today 15 AVA | TU-BE AV</p>
+              </div>
+              <div class="col-4 m-0 p-0">
+                <span class="icon-family position-absolute"></span>
+                <p class="family m-0">15 AVA | TU-BE AV 26 july 20:47 end on july 27</p>
+              </div>
+            </div>
+
+            <div class="header-descr-2 row col-xl-3 justify-content-between m-0 p-0">
+              <div class="col-3 m-0 p-0">
+                <p class="m-0 p-0">
+                  <span class="header-descr__date d-block">27</span>
+                  <span class="d-block">July</span>
+                   2018
+                </p>
+              </div>
+              <div class="col-6 m-0 p-0 row justify-content-center">
+                <button class="btn btn_capitalize date-converter__button" type="button" data-toggle="modal" data-target=".date-converter">
+                  <span class="icon-refresh position-absolute"></span>
+                  <span class="label">Date converter</span>
+                </button>
+              </div>
+              <div class="col-3 m-0 p-0">
+                <p class="m-0 p-0">
+                  <span class="header-descr__date d-block">15</span>
+                  <span class="d-block">Ava</span>
+                   2018
+                </p>
+              </div>
+            </div>
+            <!-- header-desrc-2 -->
+
+          </div>
+          <!-- header-descr -->
+
+        </div>
+
+      </nav>
+    </div>
+  </div>
+
+  <div class="slider slider_main">
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper slide-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="slide">
+                <div class="slide-text row position-absolute">
+                  <p class="slide-descr w-100 mb-3">Jewish community center</p>
+                  <p class="slide-title w-100 mb-5">Your relations<br> with the jewish world</p>
+                  <a href="#" class="slide-link align-self-end">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide">
+                <div class="slide-text row position-absolute">
+                  <p class="slide-descr w-100 mb-3">Jewish community center</p>
+                  <p class="slide-title w-100 mb-5">Your relations<br> with the jewish world</p>
+                  <a href="#" class="slide-link align-self-end">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide">
+                <div class="slide-text row position-absolute">
+                  <p class="slide-descr w-100 mb-3">Jewish community center</p>
+                  <p class="slide-title w-100 mb-5">Your relations<br> with the jewish world</p>
+                  <a href="#" class="slide-link align-self-end">Read more</a>
+                </div>
+              </div>
+            </div>
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- swiper -->
+
+
+    <div class="slide-lang slide-fix-text row align-items-end justify-content-start position-absolute">
+      <a href="#" class="en">
+        <img src="img/en.png" width="20px" height="20px">
+        <span>English</span>
+      </a>
+      <a href="#" class="ru">
+        <img src="img/ru.png" width="20px" height="20px">
+        <span>Russian</span>
+      </a>
+      <a href="#" class="he">
+        <img src="img/he.png" width="20px" height="20px">
+        <span>Israel</span>
+      </a>
+    </div>
+    <div class="slide-social slide-fix-text row justify-content-end align-items-end position-absolute">
+      <a href="#" class="facebook icon-facebook">
+        <span>Facebook</span>
+      </a>
+      <a href="#" class="instagram icon-instagram">
+        <span>Instagram</span>
+      </a>
+      <a href="#" class="telegram icon-telegram">
+        <span>Telegram</span>
+      </a>
+      <a href="#" class="youtube icon-youtube">
+        <span>Youtube</span>
+      </a>
+    </div>
+
+  </div>
+  <!-- slider -->
+
+  <div class="main">
+    <div class="container all-news search-results">
+
+      <p class="page-title d-block w-100 m-0 mt-5 mb-4">Search phrase</p>
+      <div class="all-news-nav row justify-content-center m-0">
+        <span class="second-category mr-md-2 col-12 col-md-4 text-center active active_top-border" href="#">found 8 publications</span>
+      </div>
+
+      <div class="row secondary-posts">
+        <div class="col-md-6">
+
+          <a href="statia.html" class="secondary-posts__post">
+            <p class="secondary-posts__post-title">Missing Galaxies Might Be Found By Studying The Ultraviolet</p>
+            <div class="secondary-posts__post-card">
+              <img class="col-12 col-sm-5 col-md-12 col-lg-5 p-0 mb-0" src="img/rectangle-14.png" srcset="img/rectangle-14@2x.png 2x">
+              <div class="row col-12 col-sm-7 col-md-12 col-lg-6 p-sm-0 pl-md-4 pr-0 pl-lg-0">
+                <p class="secondary-posts__post-date col-6 text-left pl-sm-0">MARCH 22, 2017</p>
+                <p class="secondary-posts__post-category col-6 text-right text-sm-right text-md-right pr-md-0 text-lg-right pl-2 pr-2">Bar Mitzvah</p>
+              </div>
+              <p class="secondary-posts__post-text mt-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+            </div>
+          </a>
+
+          <a href="statia.html" class="secondary-posts__post">
+            <p class="secondary-posts__post-title">Missing Galaxies Might Be Found By Studying The Ultraviolet</p>
+            <div class="secondary-posts__post-card">
+              <img class="col-12 col-sm-5 col-md-12 col-lg-5 p-0 mb-0" src="img/rectangle-14.png" srcset="img/rectangle-14@2x.png 2x">
+              <div class="row col-12 col-sm-7 col-md-12 col-lg-6 p-sm-0 pl-md-4 pr-0 pl-lg-0">
+                <p class="secondary-posts__post-date col-6 text-left pl-sm-0">MARCH 22, 2017</p>
+                <p class="secondary-posts__post-category col-6 text-right text-sm-right text-md-right pr-md-0 text-lg-right pl-2 pr-2">Bar Mitzvah</p>
+              </div>
+              <p class="secondary-posts__post-text mt-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+            </div>
+          </a>
+
+        </div>
+        <div class="col-md-6">
+
+          <a href="statia.html" class="secondary-posts__post">
+            <p class="secondary-posts__post-title">Missing Galaxies Might Be Found By Studying The Ultraviolet</p>
+            <div class="secondary-posts__post-card">
+              <img class="col-12 col-sm-5 col-md-12 col-lg-5 p-0 mb-0" src="img/rectangle-14.png" srcset="img/rectangle-14@2x.png 2x">
+              <div class="row col-12 col-sm-7 col-md-12 col-lg-6 p-sm-0 pl-md-4 pr-0 pl-lg-0">
+                <p class="secondary-posts__post-date col-6 text-left pl-sm-0">MARCH 22, 2017</p>
+                <p class="secondary-posts__post-category col-6 text-right text-sm-right text-md-right pr-md-0 text-lg-right pl-2 pr-2">Bar Mitzvah</p>
+              </div>
+              <p class="secondary-posts__post-text mt-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+            </div>
+          </a>
+
+          <a href="statia.html" class="secondary-posts__post">
+            <p class="secondary-posts__post-title">Missing Galaxies Might Be Found By Studying The Ultraviolet</p>
+            <div class="secondary-posts__post-card">
+              <img class="col-12 col-sm-5 col-md-12 col-lg-5 p-0 mb-0" src="img/rectangle-14.png" srcset="img/rectangle-14@2x.png 2x">
+              <div class="row col-12 col-sm-7 col-md-12 col-lg-6 p-sm-0 pl-md-4 pr-0 pl-lg-0">
+                <p class="secondary-posts__post-date col-6 text-left pl-sm-0">MARCH 22, 2017</p>
+                <p class="secondary-posts__post-category col-6 text-right text-sm-right text-md-right pr-md-0 text-lg-right pl-2 pr-2">Bar Mitzvah</p>
+              </div>
+              <p class="secondary-posts__post-text mt-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-6">
+
+          <a href="statia.html" class="secondary-posts__post">
+            <p class="secondary-posts__post-title">Missing Galaxies Might Be Found By Studying The Ultraviolet</p>
+            <div class="secondary-posts__post-card">
+              <img class="col-12 col-sm-5 col-md-12 col-lg-5 p-0 mb-0" src="img/rectangle-14.png" srcset="img/rectangle-14@2x.png 2x">
+              <div class="row col-12 col-sm-7 col-md-12 col-lg-6 p-sm-0 pl-md-4 pr-0 pl-lg-0">
+                <p class="secondary-posts__post-date col-6 text-left pl-sm-0">MARCH 22, 2017</p>
+                <p class="secondary-posts__post-category col-6 text-right text-sm-right text-md-right pr-md-0 text-lg-right pl-2 pr-2">Bar Mitzvah</p>
+              </div>
+              <p class="secondary-posts__post-text mt-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-6">
+
+          <a href="statia.html" class="secondary-posts__post">
+            <p class="secondary-posts__post-title">Missing Galaxies Might Be Found By Studying The Ultraviolet</p>
+            <div class="secondary-posts__post-card">
+              <img class="col-12 col-sm-5 col-md-12 col-lg-5 p-0 mb-0" src="img/rectangle-14.png" srcset="img/rectangle-14@2x.png 2x">
+              <div class="row col-12 col-sm-7 col-md-12 col-lg-6 p-sm-0 pl-md-4 pr-0 pl-lg-0">
+                <p class="secondary-posts__post-date col-6 text-left pl-sm-0">MARCH 22, 2017</p>
+                <p class="secondary-posts__post-category col-6 text-right text-sm-right text-md-right pr-md-0 text-lg-right pl-2 pr-2">Bar Mitzvah</p>
+              </div>
+              <p class="secondary-posts__post-text mt-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-6">
+
+         <a href="statia.html" class="secondary-posts__post">
+            <p class="secondary-posts__post-title">Missing Galaxies Might Be Found By Studying The Ultraviolet</p>
+            <div class="secondary-posts__post-card">
+              <img class="col-12 col-sm-5 col-md-12 col-lg-5 p-0 mb-0" src="img/rectangle-14.png" srcset="img/rectangle-14@2x.png 2x">
+              <div class="row col-12 col-sm-7 col-md-12 col-lg-6 p-sm-0 pl-md-4 pr-0 pl-lg-0">
+                <p class="secondary-posts__post-date col-6 text-left pl-sm-0">MARCH 22, 2017</p>
+                <p class="secondary-posts__post-category col-6 text-right text-sm-right text-md-right pr-md-0 text-lg-right pl-2 pr-2">Bar Mitzvah</p>
+              </div>
+              <p class="secondary-posts__post-text mt-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+            </div>
+          </a>
+
+        </div>
+
+        <div class="col-md-6">
+
+          <a href="statia.html" class="secondary-posts__post">
+            <p class="secondary-posts__post-title">Missing Galaxies Might Be Found By Studying The Ultraviolet</p>
+            <div class="secondary-posts__post-card">
+              <img class="col-12 col-sm-5 col-md-12 col-lg-5 p-0 mb-0" src="img/rectangle-14.png" srcset="img/rectangle-14@2x.png 2x">
+              <div class="row col-12 col-sm-7 col-md-12 col-lg-6 p-sm-0 pl-md-4 pr-0 pl-lg-0">
+                <p class="secondary-posts__post-date col-6 text-left pl-sm-0">MARCH 22, 2017</p>
+                <p class="secondary-posts__post-category col-6 text-right text-sm-right text-md-right pr-md-0 text-lg-right pl-2 pr-2">Bar Mitzvah</p>
+              </div>
+              <p class="secondary-posts__post-text mt-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+      <!-- secondary-posts -->
+
+    </div>
+  </div>
+  <!-- main -->
+
+  <div class="footer">
+    <div class="container">
+      <div class="footer__lists row justify-content-between m-sm-0">
+        <div class="col-md-1.6">
+          <ul>
+            <li><a href="#" class="footer__title">About</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Ipsum</a></li>
+            <li><a href="#">Dolor</a></li>
+            <li><a href="#">Sit</a></li>
+            <li><a href="#">Amet</a></li>
+            <li><a href="#">Consectetur</a></li>
+          </ul>
+        </div>
+        <div class="col-md-1.6">
+          <ul>
+            <li><a href="#" class="footer__title">Life cycle</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Ipsum</a></li>
+            <li><a href="#">Dolor</a></li>
+            <li><a href="#">Sit</a></li>
+            <li><a href="#">Amet</a></li>
+            <li><a href="#">Consectetur</a></li>
+          </ul>
+        </div>
+        <div class="col-md-1.6">
+          <ul>
+            <li><a href="#" class="footer__title">Learning</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Ipsum</a></li>
+            <li><a href="#">Dolor</a></li>
+            <li><a href="#">Sit</a></li>
+            <li><a href="#">Amet</a></li>
+            <li><a href="#">Consectetur</a></li>
+          </ul>
+        </div>
+        <div class="col-md-1.6">
+          <ul>
+            <li><a href="#" class="footer__title">Gallery</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Ipsum</a></li>
+            <li><a href="#">Dolor</a></li>
+            <li><a href="#">Sit</a></li>
+            <li><a href="#">Amet</a></li>
+            <li><a href="#">Consectetur</a></li>
+          </ul>
+        </div>
+        <div class="col-md-1.6">
+          <ul>
+            <li><a href="#" class="footer__title">What's on</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Ipsum</a></li>
+            <li><a href="#">Dolor</a></li>
+            <li><a href="#">Sit</a></li>
+            <li><a href="#">Amet</a></li>
+            <li><a href="#">Consectetur</a></li>
+          </ul>
+        </div>
+        <div class="col-md-1.6">
+          <ul>
+            <li><a href="#" class="footer__title">Payments</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Ipsum</a></li>
+            <li><a href="#">Dolor</a></li>
+            <li><a href="#">Sit</a></li>
+            <li><a href="#">Amet</a></li>
+            <li><a href="#">Consectetur</a></li>
+          </ul>
+        </div>
+        <div class="col-md-1.6">
+          <ul>
+            <li><a href="#" class="footer__title">youth</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Ipsum</a></li>
+            <li><a href="#">Dolor</a></li>
+            <li><a href="#">Sit</a></li>
+            <li><a href="#">Amet</a></li>
+            <li><a href="#">Consectetur</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- footer__lists -->
+
+      <div class="footer__contacts row justify-content-center justify-content-sm-around m-sm-0">
+          <p class="footer__contacts-address col-7 col-sm-3 text-center"><span>New York, Adress 324324</span></p>
+          <p class="footer__contacts-mail col-7 col-sm-3 text-center"><span>default@mail.com</span></p>
+          <p class="footer__contacts-phone col-7 col-sm-3 text-center"><span>+329830282-00-0237</span></p>
+      </div>
+      <!-- footer__contacts -->
+
+      <div class="footer__info row justify-content-sm-between align-items-center m-sm-0">
+        <p class="footer__info-alefdev col-12 col-sm-1 p-0 text-center text-sm-left">Alefdev</p>
+        <p class="col-12 col-sm-1 text-center">All rights reserved</p>
+        <p class="col-12 col-sm-3 col-md-2 p-0 text-center text-sm-right">New users today : 34434</p>
+      </div>
+      <!-- footer__info-->
+
+    </div>
+  </div>
+  <!-- footer -->
+  </div>
+
+  <div class="modal date-converter" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content shadow">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" class="icon-modal-close"></span>
+          </button>
+        </div>
+        <div class="modal-body p-0 pl-5 pr-5">
+          <p class="title text-left">Date converter</p>
+          <p class="descr text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <form>
+
+            <div class="row m-0 justify-content-between select-wrapper">
+              <select class="p-0 select select_day select_short mb-2 mb-sm-0" name="day" id="day">
+                <span style="z-index: 100;">1</span>
+                <option class="text-center" value="">01</option>
+                <option class="text-center" value="">02</option>
+                <option class="text-center" value="">03</option>
+              </select>
+              <select class="col-12 col-sm p-0 ml-sm-4 mr-sm-4 mb-2 mb-sm-0 select select_month select_long" name="month" id="month">
+                <option class="text-center" value="">January</option>
+                <option class="text-center" value="">March</option>
+                <option class="text-center" value="">February</option>
+              </select>
+              <select class="p-0 select select_year select_short" name="year" id="year">
+                <option class="text-center" value="">2018</option>
+                <option class="text-center" value="">2018</option>
+                <option class="text-center" value="">2018</option>
+              </select>
+            </div>
+
+            <div class="row justify-content-center">
+              <button class="btn btn-convert mt-3 mb-3" type="button">
+                <span class="icon-refresh"></span>
+                <span class="label">Convert</span>
+              </button>
+            </div>
+
+            <div class="row m-0 justify-content-between select-wrapper">
+              <select class="select select_day-converted select_short mb-2 mb-sm-0" name="day-converted" id="day-converted">
+                <option class="text-center" value="">01</option>
+                <option class="text-center" value="">02</option>
+                <option class="text-center" value="">03</option>
+              </select>
+              <select class="col-12 col-sm p-0 ml-sm-4 mr-sm-4 mb-2 mb-sm-0 select select_month-converted select_long" name="month-converted" id="month-converted">
+                <option class="text-center" value="">Tishrei</option>
+                <option class="text-center" value="">Tishrei</option>
+                <option class="text-center" value="">Tishrei</option>
+              </select>
+              <select class="select select_year-converted select_short mb-2 mb-sm-0" name="year-converted" id="year-converted">
+                <option class="text-center" value="">5778</option>
+                <option class="text-center" value="">5778</option>
+                <option class="text-center" value="">5778</option>
+              </select>
+            </div>
+
+          </form>
+        </div>
+        <!-- modal-body -->
+        <div class="modal-footer justify-content-center pl-5 pr-5">
+          <a class="btn btn_green btn_capitalize mt-3 mb-4">View date on calendar</a>
+        </div>
+        <!-- modal-footer -->
+      </div>
+    </div>
+  </div>
+  <!-- modal converter -->
+
+
+  <div class="modal search" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content shadow">
+        <div class="modal-header row">
+
+          <form class="search__form form-inline col-10" name="search-form" action="search-results.html">
+            <input class="search__form-input form-control mr-sm-2" type="text" name="search" placeholder="Искать">
+          </form>
+
+          <button type="button" class="close p-0 mr-3" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" class="icon-modal-close"></span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal search -->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="    sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.js"></script>
+  <script src="js/swiper.js"></script>
+
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/formstyler.js"></script>
+</body>
+</html>

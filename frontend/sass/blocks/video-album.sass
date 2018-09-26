@@ -1,0 +1,60 @@
+.video-album
+  form
+    padding-left: 60px
+    padding-right: 60px
+    border-bottom: 1px solid $underline-color
+    .form-check
+      width: 150px
+    .form-group
+      margin-bottom: 25px
+    .form-check-label
+      position: relative
+      padding-left: 30px
+      font-size: 0.875rem
+      line-height: 2.36
+      font-weight: $bold
+      color: $page-title-color
+      white-space: nowrap
+      &::before
+        position: absolute
+        content: ""
+        top: 50%
+        left: 0
+        width: 16px
+        height: 16px
+        margin-top: -8px
+        border: 1px solid $underline-color
+        border-radius: 50%
+    .form-check-input
+      display: none
+      margin-top: 0.6rem
+      &:checked + .form-check-label
+        &::before
+          position: absolute
+          content: ""
+          top: 50%
+          left: 0
+          width: 16px
+          height: 16px
+          margin-top: -8px
+          border: 1px solid $underline-color
+          border-radius: 50%
+        &::after
+          position: absolute
+          content: ""
+          top: 50%
+          left: 4px
+          width: 8px
+          height: 8px
+          margin-top: -4px
+          background-color: $main-color
+          border-radius: 50%
+
+@media (min-width: 576px)
+
+  .video-album
+    form
+      .form-check
+        width: auto
+
+

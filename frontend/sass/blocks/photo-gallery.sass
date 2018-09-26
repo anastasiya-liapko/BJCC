@@ -1,0 +1,78 @@
+.photo-gallery
+  .modal-dialog
+    max-width: 80%
+    box-sizing: border-box !important
+
+  .modal-content
+    margin-top: 50px
+    margin-bottom: 50px
+
+  .modal-body
+    .close
+      position: relative
+    .icon-close
+      position: absolute
+      top: -30px
+      right: -30px
+    .control
+      opacity: 1
+      .carousel-control-icon 
+        display: none
+        width: 67px
+        height: 65px
+        background: transparent no-repeat center center
+        background-size: 50px 50px
+
+@media(min-width: 576px)
+
+  .photo-gallery
+    .modal-dialog
+      max-width: 60%
+
+    .modal-content
+      margin-top: 70px
+      margin-bottom: 70px
+
+    .modal-body
+      .close
+        top: -50px
+        right: -70px 
+      .icon-close
+        top: 0
+        right: 0
+      .control
+        .carousel-control-icon
+          display: block 
+
+    .control_prev
+      left: -90px
+      
+    .control_next
+      right: -90px
+
+@media(min-width: 768px)
+
+  .photo-gallery
+    .modal-dialog
+      max-width: 50%
+
+    .modal-body
+      .close
+        right: -100px
+
+    .control_prev
+      left: -120px
+
+    .control_next
+      right: -120px
+
+@media(min-width: 992px)
+
+  .photo-gallery
+    .control_prev
+      left: -135px
+
+    .control_next
+      right: -135px
+
+

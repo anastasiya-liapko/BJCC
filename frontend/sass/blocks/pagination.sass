@@ -1,0 +1,38 @@
+.pagination
+  padding-top: 38px
+  padding-bottom: 38px
+  border-bottom: 1px solid $underline-color
+  .active
+    color: $main-color
+
+.pagination__year
+  a
+    font-size: 1.125rem
+    line-height: normal
+    font-weight: $bold
+    color: $page-title-color
+    text-decoration: none
+
+.pagination__buttons
+  position: relative
+  button
+    position: absolute
+    top: 0
+    width: 13px
+    height: 24px
+    background-position: center
+    background-repeat: no-repeat
+    border: none
+    cursor: pointer
+    background-color: $white-color
+    // &:focus
+    //   box-shadow: 0 0 1px 3px lightblue
+  span
+    font-size: 0
+
+.prev
+  right: 30px
+  
+.next
+  right: 0
+  

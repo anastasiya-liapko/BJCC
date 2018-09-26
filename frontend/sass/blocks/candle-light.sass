@@ -1,0 +1,80 @@
+.candle-light
+  div
+    margin: 0
+  .descr
+    font-size: 0.875rem
+    line-height: 1.93
+    font-weight: $bold
+    color: $page-title-color
+  .candle-light__card
+    height: 177px
+    background-color: #efefef
+  
+
+  .lighting
+    position: relative
+    width: 60px
+    height: 60px
+    font-size: 0.875rem
+    line-height: normal
+    color: $page-title-color
+    .icon-two-candles
+      position: absolute
+      left: 50%
+      margin-left: -10px
+    .label
+      position: absolute
+      bottom: 0
+      left: 50%
+      width: 60px
+      margin-left: -30px !important
+
+  .date
+    font-size: 1.125rem
+    line-height: normal
+    font-weight: $bold
+    color: $main-color
+
+  .time
+    font-size: 1.125rem
+    line-height: normal
+    font-weight: $bold
+    color: $page-title-color
+
+@media(min-width: 576px)
+
+  .candle-light
+    .descr
+      width: 85%
+
+    .album__element:nth-child(2n+1)
+      div
+        margin-right: 10px
+    .album__element:nth-child(2n)
+      div
+        margin-left: 10px
+
+@media(min-width: 768px)
+
+  .candle-light
+    .candle-light__card
+      // width: 333px
+      height: 204px
+    .album__element:nth-child(2n)
+      div
+        margin-left: 0
+
+@media(min-width: 992px)
+
+  .candle-light
+    .candle-light__card
+      // width: 220px
+      height: 165px
+
+@media(min-width: 1200px)
+
+  .candle-light
+    .candle-light__card
+      // width: 220px
+      height: 165px
+

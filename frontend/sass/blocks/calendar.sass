@@ -1,0 +1,176 @@
+.calendar
+  .date
+    font-size: 1.5rem
+    line-height: normal
+    font-weight: regular
+    color: $main-color
+
+  .day
+    font-size: 4rem
+    line-height: normal
+    font-weight: $bold
+    color: $main-color
+
+  .date-border
+    border-right: 1px solid $main-color
+
+  .btn
+    width: 204px
+    height: 45px
+    margin-bottom: 13px
+    font-size: 0.875rem
+    line-height: normal
+    font-weight: $bold
+    border-radius: 5px
+    color: $white-color
+    background-color: $main-color
+    text-transform: none
+
+
+  .pick-date
+    width: 204px
+    height: 57px
+    font-size: 1rem
+    line-height: normal
+    font-weight: $bold
+    color: #292529
+    background-color: #efefef
+    button
+      width: 25px
+      height: 25px
+      color: #cfd5da
+      border: none
+      background-color: transparent
+  .title
+    font-size: 0.3rem
+    line-height: normal
+    font-weight: $bold
+    text-transform: uppercase
+
+  .title_green
+    color: $main-color
+
+  .title_black
+    color: $page-title-color
+
+  .table
+    text-align: center
+    border: none
+    thead
+      th
+        padding-left: 0
+        padding-right: 0
+        border: none
+    tbody
+      td
+        font-size: 1.25rem
+        line-height: normal
+        font-weight: $bold
+        color: #8a888a
+        padding-left: 0
+        padding-right: 0
+        box-sizing: border-box
+      .text-green
+        font-size: 0.6rem
+        line-height: normal
+        font-weight: $regular
+        color: $main-color
+      .active
+        width: 40px
+        height: 40px
+        margin-top: 0 !important
+        margin-right: auto
+        margin-left: auto
+        margin-bottom: -8px !important
+        text-align: center
+        padding-top: 8px
+        border-radius: 50%
+        color: $white-color
+        background-color: red
+    .border-top
+      border-top: 5px solid $main-color !important
+  
+  .disabled
+    opacity: 0.66
+    background-color: #f8f7f8
+    span
+      opacity: 0.5
+  .images
+    height: 60px
+  .image
+    position: relative
+    font-size: 0.56rem
+    line-height: normal
+    font-weight: $regular
+    color: $page-title-color
+  .image::before
+    position: absolute
+    content: ""
+    top: 0
+    left: 0
+    width: 10px
+    height: 10px
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    background-position: center
+  .image_first::before
+    content: "\e917"
+    font-family: 'icomoon'
+    top: 5px
+  .image_second::before
+    content: "\e919"
+    font-family: 'icomoon'
+  .image_third::before
+    content: "\e918"
+    font-family: 'icomoon'
+
+@media(min-width: 576px)
+
+  .calendar
+    .title_green,
+    .title_black
+      font-size: 0.625rem
+
+    .table
+      text-align: right
+      thead
+        th
+          padding: 12px
+      tbody
+        td
+          height: 90px
+          padding: 17px
+          padding-left: 9px
+          padding-bottom: 0 !important
+        .active
+          width: 45px
+          height: 45px
+          margin-top: -5px !important
+          margin-right: -5px
+          margin-left: auto
+          margin-bottom: 3px !important
+          padding-top: 11px
+          border-radius: 50%
+          color: $white-color
+          background-color: red
+
+@media(min-width: 768px)
+
+  .calendar
+    .table
+      tbody
+        td
+          height: 100px
+        .text-green
+          font-size: 0.875rem
+
+@media(min-width: 992px)
+
+  .calendar
+    .table
+      tbody
+        td
+          height: 122px
+    .images
+      margin-top: 35px
+

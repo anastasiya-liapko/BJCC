@@ -1,0 +1,53 @@
+.date-converter
+  .title
+    font-size: 1.5rem
+    line-height: normal
+    font-weight: $bold
+    color: $main-color
+
+  .paragraph
+    font-size: 0.875rem
+    line-height: normal
+    font-weight: $regular
+    color: $page-title-color
+
+  select
+    position: relative
+    height: 33px
+    font-size: 0.875rem
+    line-height: normal
+    color: $black-color
+    border: 1px solid $main-color
+    border-radius: 30px
+    background-color: $white-color
+
+  .icon-modal-close::before
+    color: $main-color !important
+    
+  .day,
+  .year,
+  .month
+    width: 100%
+
+  .btn-convert
+    padding: 11px 9px 8px 12px
+    text-align: center
+    .label
+      font-size: 0
+  .modal-footer
+    .btn
+      width: 100%
+
+@media(min-width: 576px)
+
+  .date-converter
+    .day,
+    .year
+      width: 130px
+
+    .month
+      width: 194px
+
+    .modal-footer
+      .btn
+        width: 50%

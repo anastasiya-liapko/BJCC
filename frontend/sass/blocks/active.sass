@@ -1,0 +1,16 @@
+.active_top-border
+  position: relative
+
+.active_top-border::before
+  position: absolute
+  top: -10px
+  left: 50%
+  content: ""
+  width: 40px
+  height: 1px
+  margin-left: -20px
+  background-color: $page-title-color
+  
+.active:hover
+  text-decoration: none
+  cursor: default

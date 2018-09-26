@@ -1,0 +1,106 @@
+.footer
+	background-color: #f2f2f2
+	ul
+		margin: 0
+		padding: 0
+		list-style: none
+	a
+		font-size: $footer-font-size
+		color: $text-color
+	.footer__title
+		font-weight: $bold
+		text-transform: uppercase
+
+.footer__lists
+	div
+		display: none
+
+.footer__contacts
+	border-top: 1px solid #979797
+	border-bottom: 1px solid #979797
+	p	
+		margin: 0
+		padding: 10px 0
+		font-size: $footer-font-size
+		color: $text-color
+		white-space: nowrap
+	span
+		position: relative
+		padding-left: 40px
+
+.footer__contacts-address
+	p
+		width: 160px
+
+.footer__contacts-address span::before
+	content: "\e915"
+	font-family: 'icomoon'
+	position: absolute
+	top: -5px
+	left: 10px
+	width: 20px
+	height: 20px
+	font-size: 15px
+	color: $main-color
+
+.footer__contacts-mail
+	position: relative
+	width: 120px
+	left: -16px
+
+.footer__contacts-mail span::before
+	content: "\e914"
+	font-family: 'icomoon'
+	position: absolute
+	left: 10px
+	width: 20px
+	height: 20px
+	color: $main-color
+
+.footer__contacts-phone
+	position: relative
+	width: 140px
+	left: -10px
+
+.footer__contacts-phone span::before
+	content: "\e916"
+	font-family: 'icomoon'
+	position: absolute
+	top: -5px
+	left: 10px
+	width: 20px
+	height: 20px
+	font-size: 15px
+	color: $main-color
+
+.footer__info
+	padding: 30px 0
+	overflow: hidden
+	p
+		margin: 0
+		font-size: $footer-font-size
+		font-weight: $medium
+		color: $text-color
+		white-space: nowrap
+	.footer__info-alefdev
+		font-size: $alefdev-font-size
+		font-weight: $bold
+		color: $text-color
+
+@media (min-width: 576px)
+	.footer__lists
+		div
+			display: inline-block
+			padding: 25px 0
+
+	.footer__contacts
+		p
+			padding: 25px 0
+
+	.footer__contacts-mail
+		left: 0
+
+	.footer__contacts-phone
+		left: 0
+
+	

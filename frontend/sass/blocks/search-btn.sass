@@ -1,0 +1,47 @@
+.search__btn
+	z-index: 2
+	width: 50px
+	height: 40px
+	margin-top: 23px
+	margin-right: 0
+	background-color: transparent
+	border: none
+	.label
+		font-size: 0
+	.icon-search
+		display: inline-block
+	.icon-search::before
+		font-size: 30px
+	
+.search 
+	.modal-dialog
+		max-width: 100%
+	.modal-header
+		height: 80px !important
+
+.search__form
+	margin: auto 0 !important
+	.search__form-input
+		width: 100%
+		border: 1px solid $input-color
+		border-radius: 30px
+
+.search
+	.close
+		width: 35px
+		margin: auto 0
+
+@media (min-width: 576px)
+
+	.search__btn
+		width: 45px
+		height: 45px
+		margin-top: 31px
+		.icon-search::before
+			font-size: 50px
+
+@media(min-width: 576px)
+
+	.search
+		.modal-header
+			height: 120px !important
