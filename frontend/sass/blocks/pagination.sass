@@ -1,4 +1,5 @@
 .pagination
+  padding-right: 20px
   padding-top: 38px
   padding-bottom: 38px
   border-bottom: 1px solid $underline-color
@@ -6,6 +7,7 @@
     color: $main-color
 
 .pagination__year
+  margin-right: -25px
   a
     font-size: 1.125rem
     line-height: normal
@@ -35,4 +37,29 @@
   
 .next
   right: 0
+
+@media(min-width: 576px)
+
+  .pagination
+    margin-right: 0
+    margin-left: 0
+
+  .pagination__year
+    margin-right: -10px
+
+@media(min-width: 768px)
+
+  .pagination
+    margin-right: 25px
+
+  .pagination__year
+    margin-right: -20px
+
+@media(min-width: 992px)
+
+  .pagination
+    margin-right: 15px
+
+  .pagination__year
+    margin-right: -15px
   

@@ -46,12 +46,14 @@
   width: 37%
   height: 8%
   a
-    span
+    .label
       font-size: 0
 		
 .slide-lang
   left: 10%
   a
+    width: 20px
+    height: 22px
     margin-right: 8%
     color: $white-color
     text-transform: uppercase
@@ -64,8 +66,8 @@
 
 .slide-social
   right: 10%
-  // padding-bottom: 2px
   a
+    height: 21px
     cursor: pointer
     &::before
       font-size: 20px
@@ -74,11 +76,20 @@
       text-decoration: none
   .he
     width: 32px
-    height: 22px
+    height: 21px
   .icon-youtube::before
     font-size: 17px
     line-height: 1.2
-
+  .icon-youtube
+    width: 25px
+    padding-top: 1px
+  .icon-telegram
+    width: 25px
+  .icon-instagram
+    width: 22px
+  .icon-facebook
+    width: 15px
+    margin-right: 5px
 
 .slider_main
   .slide-wrapper
@@ -102,23 +113,31 @@
 @media (min-width: 576px)
 
   .slide-lang
+    a
+      width: 30px
+      height: 30px
     img
       width: 30px
       height: 30px
 
-  // .slide-fix-text
-  //   a
-  //     width: 30px
-  //     height: 30px
-
   .slide-social
     a
+      height: 25px
       margin-left: 8% !important
       &::before
         font-size: 25px
     .icon-youtube::before
       font-size: 22px
-      line-height: 1.3
+    .icon-youtube
+      width: 31px
+      padding-top: 0
+    .icon-telegram
+      width: 30px
+    .icon-instagram
+      width: 25px
+    .icon-facebook
+      width: 15px
+      margin-right: 5px
   
   .slide-text
     top: 37.5%

@@ -18,8 +18,9 @@ document.querySelector('.pagination__prev').onclick = function() {
   pickYear(parseFloat(document.querySelector('#nextYear').dataset.year)-1, parseFloat(document.querySelector('#nextYear').dataset.month)-1);
 }
 
-// переключатель плюс год
+  // переключатель плюс год
 document.querySelector('.pagination__next').onclick = function() {
-  pickYear(parseFloat(document.querySelector('#nextYear').dataset.year)+1, parseFloat(document.querySelector('#nextYear').dataset.month)+1);
+  if (parseFloat(document.querySelector('#nextYear').dataset.year) < new Date().getFullYear()) {
+    pickYear(parseFloat(document.querySelector('#nextYear').dataset.year)+1, parseFloat(document.querySelector('#nextYear').dataset.month)+1);
+  }
 }
-
