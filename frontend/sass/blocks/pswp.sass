@@ -1,0 +1,27 @@
+.pswp
+  .pswp__bg
+    background: #ffffff
+
+  .pswp__ui--fit .pswp__top-bar 
+    background-color: #ffffff
+
+  .pswp__button--close
+    background-image: none !important
+    &::before
+      content: "\e902"
+      font-family: 'icomoon'
+      font-size: 30px
+      color: #c7cdce
+    &:hover::before
+      color: $main-color
+
+  .pswp__counter
+    display: none
+
+  .pswp__button--arrow--left::before,
+  .pswp__button--arrow--right::before
+    background: none
+    background-color: transparent
+
+  .pswp__top-bar
+    background-color: #ffffff

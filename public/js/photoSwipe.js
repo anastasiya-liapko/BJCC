@@ -5,19 +5,19 @@ var pswpElement = document.querySelectorAll('.pswp')[0];
 // build items array
 var items = [
     {
-        src: 'img/rectangle-13.png',
-        w: 600,
-        h: 400
+        src: 'img/rectangle-00@3x.png',
+        w: 940,
+        h: 278
     },
     {
-        src: 'img/gallery-modal.png',
-        w: 1200,
-        h: 900
+        src: 'img/rectangle-13@3x.png',
+        w: 1374,
+        h: 840
     },
     {
-        src: 'img/rectangle-10.png',
-        w: 220,
-        h: 330
+        src: 'img/rectangle-14@3x.png',
+        w: 736,
+        h: 644
     }
 ];
 
@@ -26,22 +26,27 @@ var options = {
     // optionName: 'option value'
     // for example:
     index: 0, // start at first slide
-    modal: false
 };
 
 if ( $(window).width() < 576 ) {
-    document.querySelector('#go').onclick = function(evt) {
-        evt.preventDefault();
-        // Initializes and opens PhotoSwipe
-        var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-        gallery.init();
-    } 
+  document.querySelector('.my-gallery').onclick = function(evt) {
+    evt.preventDefault();
+    var elem = evt.target;
+      if (elem.hasAttribute('src')) {
+      // Initializes and opens PhotoSwipe
+      var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+      gallery.init();
+    }
+  } 
 } 
 if ( $(window).width() > 576 ) {
-    $('#go').click( function(event) { // лoвим клик пo ссылки с id="go"
+    $('.my-gallery').click( function(evt) { // лoвим клик пo ссылки с id="go"
         event.preventDefault(); // выключaем стaндaртную рoль элементa
-        if ( $(window).width() > 576 ) {
-            $('#myModal').modal('show')
+        var elem = evt.target;
+        if (elem.hasAttribute('src')) {
+          if ( $(window).width() > 576 ) {
+              $('#myModal').modal('show')
+          }
         }
     })
 }
@@ -49,24 +54,27 @@ if ( $(window).width() > 576 ) {
 $(window).resize(function() {
 
     if ( $(window).width() < 576 ) {
-        document.querySelector('#go').onclick = function(evt) {
-        evt.preventDefault();
-
-            if ( $(window).width() < 576 ) {
+      document.querySelector('.my-gallery').onclick = function(evt) {
+      evt.preventDefault();
+        var elem = evt.target;
+        if (elem.hasAttribute('src')) {
+          if ( $(window).width() < 576 ) {
             // Initializes and opens PhotoSwipe
-                var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-                gallery.init();
-            }
-        } 
+            var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+            gallery.init();
+          }
+        }
+      } 
 
     } else {
-        $('#go').click( function(event) { // лoвим клик пo ссылки с id="go"
-            event.preventDefault(); // выключaем стaндaртную рoль элементa
-
-            if ( $(window).width() > 576 ) {
-                $('#myModal').modal('show')
-            } 
-
-        })
+      $('.my-gallery').click( function(evt) { // лoвим клик пo ссылки с id="go"
+        event.preventDefault(); // выключaем стaндaртную рoль элементa
+        var elem = evt.target;
+        if (elem.hasAttribute('src')) {
+          if ( $(window).width() > 576 ) {
+              $('#myModal').modal('show')
+          } 
+        }
+      })
     }
 });
