@@ -27,6 +27,8 @@
     border: none
     cursor: pointer
     background-color: $white-color
+    &:hover::before
+      color: $main-color
     // &:focus
     //   box-shadow: 0 0 1px 3px lightblue
   span
@@ -43,9 +45,10 @@
   .pagination
     margin-right: 0
     margin-left: 0
+    padding-right: 0
 
   .pagination__year
-    margin-right: -10px
+    margin-right: 0px
 
 @media(min-width: 768px)
 
@@ -53,7 +56,7 @@
     margin-right: 25px
 
   .pagination__year
-    margin-right: -20px
+    margin-right: -15px
 
 @media(min-width: 992px)
 
@@ -61,5 +64,5 @@
     margin-right: 15px
 
   .pagination__year
-    margin-right: -15px
+    margin-right: -10px
   
