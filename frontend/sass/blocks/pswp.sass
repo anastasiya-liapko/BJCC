@@ -2,8 +2,16 @@
   .pswp__bg
     background: #ffffff
 
-  .pswp__ui--fit .pswp__top-bar 
-    background-color: #ffffff
+  .pswp__scroll-wrap
+    overflow: visible
+
+  .pswp__ui--fit
+    position: relative
+    margin: auto
+    top: 50%
+    .pswp__top-bar 
+      background-color: transparent
+    
 
   .pswp__button--close
     background-image: none !important
@@ -18,10 +26,104 @@
   .pswp__counter
     display: none
 
-  .pswp__button--arrow--left::before,
+  .pswp__button--arrow--left,
+  .pswp__button--arrow--right
+    width: 70px
+    height: 70px
+    margin-top: -35px
+    &::before
+      top: 0
+      left: 0
+      width: 70px
+      height: 70px
+      font-family: 'icomoon'
+      font-size: 50px
+      color: #c7cdce
+      background-image: none !important
+      background-color: transparent
+    &:hover::before
+      color: $main-color
+
+  .pswp__button--arrow--left::before
+    content: "\e901"
+
   .pswp__button--arrow--right::before
-    background: none
+    content: "\e900"
+
+  .pswp__caption,
+  .pswp__top-bar
     background-color: transparent
 
-  .pswp__top-bar
-    background-color: #ffffff
+  .pswp__ui--idle
+    .pswp__button--arrow--right,
+    .pswp__button--arrow--left,
+    .pswp__button--close
+      opacity: 1
+
+@media (min-width: 768px)
+
+  .pswp
+    .pswp__scroll-wrap
+      width: 85%
+      left: 7%
+    
+    .pswp__button--close
+      margin-top: -45px
+      margin-right: -50px
+
+    .pswp__button--arrow--left
+      margin-left: -65px
+
+    .pswp__button--arrow--right
+       margin-right: -65px
+
+@media (min-width: 992px)
+
+  .pswp
+    .pswp__scroll-wrap
+      width: 85%
+      left: 7%
+    
+    .pswp__button--close
+      margin-top: -45px
+      margin-right: -65px
+
+    .pswp__button--arrow--left
+      margin-left: -80px
+
+    .pswp__button--arrow--right
+       margin-right: -80px
+
+// @media (min-width: 1200px)
+
+//   .pswp
+//     .pswp__scroll-wrap
+//       width: 85%
+//       left: 7%
+    
+//     .pswp__button--close
+//       margin-top: -60px
+//       margin-right: -80px
+
+//     .pswp__button--arrow--left
+//       margin-left: -110px
+
+//     .pswp__button--arrow--right
+//        margin-right: -110px
+
+//     .pswp__button--arrow--left,
+//     .pswp__button--arrow--right
+//       width: 120px
+//       height: 120px
+//       margin-top: -60px
+//       &::before
+//         width: 120px
+//         height: 120px
+//         font-size: 80px
+
+//     .pswp__button--close
+//       &::before
+//         font-size: 40px
+
+
+
