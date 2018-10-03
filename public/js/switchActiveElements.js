@@ -11,18 +11,19 @@ $(function () {
     if (cur_url == link)
     {
       $(this).addClass('active');
-      console.log($(this).parents('li'));
       $(this).parents('li').children('.nav-link').addClass('active');  
     }
   });
 });
 
-$('.all-news-nav a').click(function () {
+$('.all-news-nav a').click(function (event) {
+  event.preventDefault();
   $('.all-news-nav a').removeClass('active');
   $(this).addClass('active');
 })
 
-$('.pagination__year a').click(function () {
+$('.pagination__year a').click(function (event) {
+  event.preventDefault();
   $('.pagination__year a').removeClass('active');
   $(this).addClass('active');
 })
