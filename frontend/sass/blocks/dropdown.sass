@@ -20,7 +20,18 @@
     border: none
 
 .dropdown-item_main
-  display: none
+  // text-align: center
+  margin-top: -33px
+  margin-bottom: 5px
+  font-size: $header-font-size
+  font-weight: $medium
+  letter-spacing: 0.8px
+  color: $white-color
+  text-transform: uppercase
+  white-space: nowrap
+  border-bottom: none
+// .dropdown-item_main
+//   display: none
 
 .dropdown-toggle::after
   display: none
@@ -33,6 +44,12 @@
     padding: 4px 5px
     border: none
     border-radius: 1rem
+
+  .dropdown-menu_gallery
+    left: -4px
+
+  .dropdown-menu_payments
+    left: -8px
 
   .dropdown-item
     padding: 0.25rem 0.5rem
@@ -52,10 +69,12 @@
       margin-bottom: 6px
 
   .dropdown-item_main
-    display: block
+    // display: block
+    margin-top: 0
     margin-bottom: 10px
     font-size: 0.60rem
     font-weight: $medium
+    text-align: center
     border: none
     text-transform: uppercase
 
@@ -65,9 +84,21 @@
 @media (min-width: 1200px)
 
   .dropdown-menu
-    min-width: 90px
+    min-width: 80px
     margin-top: -34px
     padding: 4px 6px
+
+  .dropdown-menu_life-cycle
+    left: 0
+
+  .dropdown-menu_gallery
+    left: -6px
+
+  .dropdown-menu_whats-on
+    left: -1px
+
+  .dropdown-menu_payments
+    left: -11px
 
   .dropdown-item
     font-size: $footer-font-size

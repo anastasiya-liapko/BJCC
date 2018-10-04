@@ -13,6 +13,9 @@
 	input
 		border: 1px solid $input-color
 		border-radius: 17px
+		&:focus
+			box-shadow: none 
+			border: 1px solid $input-color
 	input[name="title"],
 	input[name="message"]
 		width: 100%
@@ -37,6 +40,11 @@
 	  background-color: $white-color
 	  border: 2px solid $main-color
 	  border-radius: 17px
+
+	.ask-form__btn:hover
+		color: $white-color
+		background-color: $main-color
+		
 	.title-wrapper
 		padding-right: 3.43rem
 

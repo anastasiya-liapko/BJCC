@@ -14,6 +14,8 @@
     
 
   .pswp__button--close
+    // margin-top: -45px
+    // margin-right: -7px
     background-image: none !important
     &::before
       content: "\e902"
@@ -28,6 +30,7 @@
 
   .pswp__button--arrow--left,
   .pswp__button--arrow--right
+    display: none
     width: 70px
     height: 70px
     margin-top: -35px
@@ -54,11 +57,11 @@
   .pswp__top-bar
     background-color: transparent
 
-  .pswp__ui--idle
-    .pswp__button--arrow--right,
-    .pswp__button--arrow--left,
-    .pswp__button--close
-      opacity: 1
+  // .pswp__ui--idle
+  //   .pswp__button--arrow--right,
+  //   .pswp__button--arrow--left,
+  //   .pswp__button--close
+  //     opacity: 1
 
 @media (min-width: 768px)
 
@@ -72,10 +75,12 @@
       margin-right: -50px
 
     .pswp__button--arrow--left
+      display: block
       margin-left: -65px
 
     .pswp__button--arrow--right
-       margin-right: -65px
+      display: block
+      margin-right: -65px
 
 @media (min-width: 992px)
 

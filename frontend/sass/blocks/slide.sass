@@ -17,12 +17,31 @@
     color: $white-color
     text-transform: uppercase
   .slide-link
+    position: relative
     width: 140px
     font-size: 1rem
     font-weight: bold
     letter-spacing: 1px
     color: $white-color
-    border-bottom: 1px solid $white-color
+    &:hover
+      text-decoration: none
+    &::after
+      content: ""
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 140px
+      height: 1px
+      background-color: $white-color
+  .slide-link:hover::after
+    -webkit-transform: translateX(-70px) scale(0)
+    -ms-transform: translateX(-70px) scale(0)
+    transform: translateX(-70px) scale(0)
+    -webkit-transition: left 500ms ease
+    -moz-transition: left 500ms ease
+    -ms-transition: left 500ms ease
+    -o-transition: left 500ms ease
+    transition: all 500ms ease
 
 .slider
 	position: relative
@@ -74,6 +93,8 @@
       color: $white-color
     &:hover
       text-decoration: none
+  a:hover
+    height: 25px
   .he
     width: 32px
     height: 21px
@@ -128,6 +149,8 @@
       margin-left: 8% !important
       &::before
         font-size: 25px
+    a:hover
+      height: 29px
     .icon-youtube::before
       font-size: 22px
     .icon-youtube

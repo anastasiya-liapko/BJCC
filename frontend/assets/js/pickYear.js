@@ -16,11 +16,21 @@ pickYear(new Date().getFullYear(), new Date().getMonth());
 // переключатель минус год
 document.querySelector('.pagination__prev').onclick = function() {
   pickYear(parseFloat(document.querySelector('#nextYear').dataset.year)-1, parseFloat(document.querySelector('#nextYear').dataset.month)-1);
+  var pickedYear = $('.pagination__year .active').html();
+  var firstAlbumYear = $('.album__title-first');
+  var secondAlbumYear = $('.album__title-second');
+  firstAlbumYear.text(pickedYear);
+  secondAlbumYear.text(pickedYear-1);
 }
 
   // переключатель плюс год
 document.querySelector('.pagination__next').onclick = function() {
   if (parseFloat(document.querySelector('#nextYear').dataset.year) < new Date().getFullYear()) {
     pickYear(parseFloat(document.querySelector('#nextYear').dataset.year)+1, parseFloat(document.querySelector('#nextYear').dataset.month)+1);
+    var pickedYear = $('.pagination__year .active').html();
+    var firstAlbumYear = $('.album__title-first');
+    var secondAlbumYear = $('.album__title-second');
+    firstAlbumYear.text(pickedYear);
+    secondAlbumYear.text(pickedYear-1);
   }
 }

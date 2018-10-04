@@ -21,6 +21,10 @@
     border-radius: 30px
     background-color: $white-color
 
+  .btn_capitalize:hover
+    color: $black-color !important
+    background-color: $white-color
+
   .icon-modal-close::before
     color: $main-color !important
     
@@ -32,8 +36,14 @@
   .btn-convert
     padding: 11px 9px 8px 12px
     text-align: center
+    &:hover
+      background-color: $main-color
     .label
       font-size: 0
+
+  .btn-convert:hover .icon-refresh::before
+    color: $white-color !important
+
   .modal-footer
     .btn
       width: 100%
